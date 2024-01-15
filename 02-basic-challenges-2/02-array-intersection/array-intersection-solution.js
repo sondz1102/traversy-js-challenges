@@ -29,7 +29,7 @@ function arrayIntersection(arr1, arr2) {
     }
   }
 
-  return intersection;
+  return [...new Set(intersection)];
 }
 
 module.exports = arrayIntersection;
